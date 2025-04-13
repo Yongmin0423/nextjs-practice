@@ -7,7 +7,7 @@ export const metadata = {
   title: "Lists",
 };
 
-interface Link {
+interface BuyLink {
   name: string;
   url: string;
 }
@@ -18,7 +18,7 @@ interface Book {
   book_image: string;
   primary_isbn13: string;
   primary_isbn10: string;
-  buy_links: Link[];
+  buy_links: BuyLink[];
 }
 
 export default async function BookListByCategory({
