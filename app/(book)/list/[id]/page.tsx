@@ -21,11 +21,14 @@ interface Book {
   buy_links: BuyLink[];
 }
 
-export default async function BookListByCategory({
-  params: { id },
-}: {
-  params: { id: string };
-}) {
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+export default async function BookListByCategory({ params }: PageProps) {
+  const { id } = params;
   async function getCoverList() {
     const response = await fetch(`${API_BASE_URL}/list?name=${id}`);
     const data = await response.json();
