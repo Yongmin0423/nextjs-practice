@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "YoonChildfundkoreaManSeh";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaManSeh.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "YoonChildfundkoreaManSeh";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  font-size: 2rem;
+  border: 1px solid black;
+  li {
+    &:first-child {
+      &:hover {
+        scale: 1.2;
+      }
+    }
+    &:last-child {
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+}
