@@ -21,13 +21,12 @@ interface Book {
   buy_links: BuyLink[];
 }
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default async function BookListByCategory({ params }: PageProps) {
+// PageProps 인터페이스를 제거하고 직접 타입 정의
+export default async function BookListByCategory({
+  params,
+}: {
+  params: { id: string };
+}) {
   const { id } = params;
   async function getCoverList() {
     const response = await fetch(`${API_BASE_URL}/list?name=${id}`);
