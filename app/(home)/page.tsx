@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
-
-export const API_BASE_URL = "https://books-api.nomadcoders.workers.dev";
+import { API_BASE_URL } from "@/constants";
 
 interface Book {
   list_name: string;

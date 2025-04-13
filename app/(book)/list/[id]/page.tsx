@@ -1,4 +1,4 @@
-import { API_BASE_URL } from "@/app/(home)/page";
+import { API_BASE_URL } from "@/constants";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
